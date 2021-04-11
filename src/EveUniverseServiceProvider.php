@@ -33,10 +33,6 @@ class EveUniverseServiceProvider extends AbstractSeatPlugin
         }
     }
 
-    public function getVersion(): string{
-        return "1.0";
-    }
-
     public function getName(): string
     {
         return "Eve Universe";
@@ -44,7 +40,7 @@ class EveUniverseServiceProvider extends AbstractSeatPlugin
 
     public function getPackageRepositoryUrl(): string
     {
-        return 'https://github.com/SimplyUnnamed/eveuniverse';
+        return 'https://github.com/SimplyUnnamed/eve-universe';
     }
 
     public function getPackagistPackageName(): string
@@ -54,6 +50,6 @@ class EveUniverseServiceProvider extends AbstractSeatPlugin
 
     public function getPackagistVendorName(): string
     {
-        return 'SimplyUnnamed';
+        return 'simplyunnamed';
     }
 }
