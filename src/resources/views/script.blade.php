@@ -1,0 +1,1 @@
+$("%1$s").select2({ajax: {delay: 500,url: "{{ route('eveuniverse.search') }}",dataType: 'json',data: function (params) {params.type = '%2$s';return params;},processResults: function (data) {return {results: data,}}}, templateResult: function (item) {return $(item.view);}, templateSelection: function (item) {return $(item.view);}})

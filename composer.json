@@ -1,0 +1,34 @@
+{
+    "name": "simplyunnamed/eveuniverse",
+    "description": "Search EVE universe API",
+    "type": "seat-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simply Unnamed",
+            "email": "noemail@mail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SimplyUnnamed\\Seat\\EveUniverse\\": "src/"
+        },
+        "files": [
+            "src/Helpers/eveuniverse.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "eveseat/services": "^4.1",
+        "eveseat/eveapi": "^4.0",
+        "eveseat/web": "^4.0"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SimplyUnnamed\\Seat\\EveUniverse\\EveUniverseServiceProvider"
+            ]
+        }
+    }
+}
