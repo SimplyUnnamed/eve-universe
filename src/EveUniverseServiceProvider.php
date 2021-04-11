@@ -44,12 +44,12 @@ class EveUniverseServiceProvider extends AbstractSeatPlugin
 
     public function getPackageRepositoryUrl(): string
     {
-        return 'https://github.com/SimplyUnnamed/eve-universe';
+        return 'https://github.com/SimplyUnnamed/eveuniverse';
     }
 
     public function getPackagistPackageName(): string
     {
-        return 'Eve-Universe';
+        return 'eveuniverse';
     }
 
     public function getPackagistVendorName(): string
